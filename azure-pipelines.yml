@@ -54,7 +54,7 @@ stages:
             inputs:
               action: deploy
               connectionType: 'azureResourceManager'
-              azureSubscriptionConnection: '4bfd3021-ce3b-41aa-a4a4-1db52475c279'
+              azureSubscriptionConnection: '$(azureSubscriptionConnection)'
               azureResourceGroup: '$(azureResourceGroup)'
               kubernetesCluster: '$(kubernetesCluster)'
               useClusterAdmin: true

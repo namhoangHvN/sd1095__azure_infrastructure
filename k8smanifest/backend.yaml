@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: namhcontainerregistry.azurecr.io/backend:1
+          image: namhoangcontainerregistry.azurecr.io/backend:1
           imagePullPolicy: Always
           ports:
             - containerPort: 3000

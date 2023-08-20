@@ -6,7 +6,7 @@ resources:
 - mongodb.yaml
 - ingress.yml
 images:
-- name: khoanncontainerregistry.azurecr.io/backend
-  newTag: "760"
-- name: khoanncontainerregistry.azurecr.io/frontend
-  newTag: "756"
+- name: namhcontainerregistry.azurecr.io/backend
+  newTag: "1"
+- name: namhcontainerregistry.azurecr.io/frontend
+  newTag: "1"

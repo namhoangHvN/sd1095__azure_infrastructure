@@ -6,7 +6,7 @@ metadata:
   # You'll usually want to add your resources to the argocd namespace.
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: app=khoanncontainerregistry.azurecr.io/backend, frontend=khoanncontainerregistry.azurecr.io/frontend
+    argocd-image-updater.argoproj.io/image-list: app=namhoangcontainerregistry.azurecr.io/backend, frontend=namhoangcontainerregistry.azurecr.io/frontend
     argocd-image-updater.argoproj.io/backend.update-strategy: latest
     argocd-image-updater.argoproj.io/frontend.update-strategy: latest
     argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd/git-creds       
@@ -24,7 +24,7 @@ spec:
 
   # Source of the application manifests
   source:
-    repoURL: https://github.com/khoann1999/sd4458_azure_infrastructure
+    repoURL: https://github.com/namhoangHvN/sd1095__azure_infrastructure
     targetRevision: HEAD
     path: ./k8smanifest
    

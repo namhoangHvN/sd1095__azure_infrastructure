@@ -9,15 +9,15 @@ resource "azurerm_resource_group" "rg" {
 }
 
 resource "random_pet" "azurerm_kubernetes_cluster_name" {
-  prefix = "cluster-khoann"
+  prefix = "cluster-namh"
 }
 
 resource "random_pet" "azurerm_kubernetes_cluster_dns_prefix" {
-  prefix = "dns-khoann"
+  prefix = "dns-namh"
 }
 
 resource "random_pet" "azurerm_log_analytics_workspace" {
-  prefix = "log-khoann"
+  prefix = "log-namh"
 }
 
 # create azurerm_log_analytics_workspace for data source to import gafana
@@ -62,7 +62,7 @@ resource "azurerm_kubernetes_cluster" "k8s" {
 }
 //Create acr
 resource "azurerm_container_registry" "acr" {
-  name                = "namhcontainerregistry"
+  name                = "namhoangcontainerregistry"
   resource_group_name = azurerm_resource_group.rg.name
   location            = azurerm_resource_group.rg.location
   sku                 = "Standard"

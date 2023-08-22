@@ -20,8 +20,8 @@ spec:
   selector:
     matchLabels:
       app: frontend
-  revisionHistoryLimit: 1
-  replicas: 1
+  revisionHistoryLimit: 4
+  replicas: 4
   template:
     metadata:
       labels:
